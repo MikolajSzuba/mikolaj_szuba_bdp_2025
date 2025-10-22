@@ -1,0 +1,2 @@
+\c cw2_db;
+CREATE EXTENSION IF NOT EXISTS postgis;
