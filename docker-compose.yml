@@ -1,0 +1,19 @@
+services:
+  postgis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    container_name: postgres_bdp
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+
+volumes:
+  postgis_data:
+    driver: local

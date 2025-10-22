@@ -1,1 +1,2 @@
-setup
+DROP DATABASE IF EXISTS firma;
+CREATE DATABASE firma;
