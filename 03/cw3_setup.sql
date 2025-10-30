@@ -1,0 +1,13 @@
+
+DROP DATABASE IF EXISTS cw3_db;
+CREATE DATABASE cw3_db;
+
+\c cw3_db;
+
+CREATE EXTENSION postgis;
+
+CREATE TABLE obiekty (
+    id SERIAL PRIMARY KEY,
+    nazwa VARCHAR(50),
+    geom GEOMETRY 
+);
