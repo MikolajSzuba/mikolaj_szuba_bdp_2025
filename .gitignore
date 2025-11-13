@@ -207,3 +207,8 @@ marimo/_lsp/
 __marimo__/
 .idea/
 Karlsruhe_Germany_Shapefile/
+
+04_iot_data/
+output/
+main.py
+*.zip
